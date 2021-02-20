@@ -29,7 +29,8 @@ function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 
 for (let i = 0; i < questions.length; i++) {
-  candidateAnswers[i] = input.question(`${i+1}) ${questions[i]}`);
+  /*candidateAnswers[i] = input.question(`${i+1}) ${questions[i]}`);*/
+  candidateAnswers[i] = input.question(`${questions[i]}`);
   console.log(`Your Answer: ${candidateAnswers[i]} \nCorrect Answer: ${correctAnswers[i]}`);
   console.log("\n");
 }
