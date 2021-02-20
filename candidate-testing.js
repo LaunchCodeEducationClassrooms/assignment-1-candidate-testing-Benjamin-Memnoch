@@ -47,7 +47,7 @@ function gradeQuiz(candidateAnswers) {
     
     }
 
-  console.log(`>>> Overall Grade: ${finalGrade}% (${grade} of 5 responses correct) <<<`);
+  console.log(`>>> Overall Grade: ${finalGrade}% (${grade} of ${questions.length} responses correct) <<<`);
   if (finalGrade < 80){
     console.log(`>>> Status: FAILED <<<`);
   } else {console.log(`>>> Status: PASSED <<<`)};
