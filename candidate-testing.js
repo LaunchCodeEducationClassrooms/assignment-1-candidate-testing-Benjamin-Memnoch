@@ -41,14 +41,14 @@ function gradeQuiz(candidateAnswers) {
   
   for (i = 0; i < candidateAnswers.length; i++) {
     if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
-      grade++;
-      finalGrade = (grade/5) * 100; 
+      finalGrade++;
+      grade = (finalGrade/5) * 100; 
       }
     
     }
 
-  console.log(`>>> Overall Grade: ${finalGrade}% (${grade} of ${questions.length} responses correct) <<<`);
-  if (finalGrade < 80){
+  console.log(`>>> Overall Grade: ${grade}% (${finalGrade} of ${questions.length} responses correct) <<<`);
+  if (grade < 80){
     console.log(`>>> Status: FAILED <<<`);
   } else {console.log(`>>> Status: PASSED <<<`)};
 
